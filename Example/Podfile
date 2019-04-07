@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SKImageExtension_Example' do
+  pod 'SKImageExtension', :path => '../'
+
+  target 'SKImageExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
