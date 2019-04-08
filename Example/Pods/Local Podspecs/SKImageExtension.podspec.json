@@ -1,7 +1,7 @@
 {
   "name": "SKImageExtension",
   "version": "0.1.0",
-  "summary": "A short description of SKImageExtension.",
+  "summary": "An extension for UIIMageView",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/rohan.kolkata@gmail.com/SKImageExtension",
   "license": {
@@ -9,14 +9,20 @@
     "file": "LICENSE"
   },
   "authors": {
-    "rohan.kolkata@gmail.com": "rohan.kolkata@gmail.com"
+    "rohan": "rohan.kolkata@gmail.com"
   },
   "source": {
     "git": "https://github.com/rohan.kolkata@gmail.com/SKImageExtension.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
-  "source_files": "SKImageExtension/Classes/**/*"
+  "source_files": "SKImageExtension/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Kingfisher": [
+      "~> 4.8.0"
+    ]
+  }
 }

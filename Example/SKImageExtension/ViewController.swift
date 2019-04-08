@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import SKImageExtension
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
+    @IBOutlet weak var testImageView: UIImageView!
+    @IBOutlet weak var anotherImageview: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        testImageView.circleImageView(borderColor: UIColor.white, borderWidth: 2.0)
+        testImageView.downloadedFrom(link: "https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg")
+        
+        anotherImageview.circleImageView(borderColor: UIColor.white, borderWidth: 2.0)
+        anotherImageview.downloadAndCacheImage(link: "https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
     }
 
 }
